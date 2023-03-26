@@ -79,6 +79,38 @@ a:hover {
 		margin-right: 10px;
 	}
         </style>
+	
+	<style>
+      /* تعريف الأسلوب الخاص بتحديد اسعار العرض والارتفاع */
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* تحديد الأسلوب الخاص بتناسب العرض والارتفاع حسب حجم الشاشة */
+      @media (max-width: 768px) {
+        /* الأسلوب الذي يناسب أحجام الشاشات التي يكون عرضها أقل من 768 بيكسل */
+        body {
+          background-color: blue;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        /* الأسلوب الذي يناسب أحجام الشاشات التي يكون عرضها بين 769 بيكسل و 1024 بيكسل */
+        body {
+          background-color: yellow;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        /* الأسلوب الذي يناسب أحجام الشاشات التي يكون عرضها أكبر من 1025 بيكسل */
+        body {
+          background-color: green;
+        }
+      }
+    </style>
         
 </head>
 <body>
